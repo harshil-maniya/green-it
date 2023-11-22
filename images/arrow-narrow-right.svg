@@ -1,0 +1,33 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#1E1E1E"/>
+<g id="Home" clip-path="url(#clip0_41_341)">
+<rect width="1440" height="4008" transform="translate(-437 -1447)" fill="white"/>
+<g id="Group 772544845">
+<g id="Rectangle 25356" filter="url(#filter0_d_41_341)">
+<rect x="-317" y="-329" width="373" height="385" fill="white"/>
+</g>
+<g id="Group 2611301">
+<g id="Frame 772544626">
+<g id="arrow-narrow-right">
+<path id="Icon" d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#194AB9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_41_341" x="-333" y="-337" width="405" height="417" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="8"/>
+<feGaussianBlur stdDeviation="8"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.647059 0 0 0 0 0.823529 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_41_341"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_41_341" result="shape"/>
+</filter>
+<clipPath id="clip0_41_341">
+<rect width="1440" height="4008" fill="white" transform="translate(-437 -1447)"/>
+</clipPath>
+</defs>
+</svg>

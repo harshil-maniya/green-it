@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Third Party Risk Governance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+      media="all"
+      onload="this.media='all'"
+    />
+    <style>
+      /* Add the font-display property to control font loading behavior */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap; /* Use 'swap' to prevent text from being invisible during font download */
+        src: local("Inter"), local("Inter-Regular"),
+          url(https://fonts.gstatic.com/s/inter/v4/UcBNhIfnI6rSYxFnUAQXub8vNaPCmiJgUxZ3jV0iK2w.woff2)
+            format("woff2"); /* Update the URL with the correct font file */
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    "
+    />
+    <link rel="stylesheet" href="third-party.css" />
+  </head>
+  <body>
+    <div class="foo no-flick">
+
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="../home/home.html">
+        <img src="../images/logo.png" alt="" class="logoImage" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="navbar-toggler-button"
+      >
+        <span class="navbar-toggler-icon" onclick="toggleNavbar()"></span>
+      </button>
+      <img
+        src="../images/close.svg"
+        alt="Close"
+        class="close_icon"
+        onclick="closeNav()"
+        style="display: none"
+      />
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../about/about.html"
+              >About us</a
+            >
+          </li>
+          <li class="nav-item dropdown hoverable-dropdown">
+            <div class="dropdown-toggle nav-link active" role="button">
+              <a href="../service/service.html"> Services</a>
+              <span class="arrow-down" onclick="openTab()"></span>
+            </div>
+            <ul class="dropdown-menu">
+              <div class="large_allMenu">
+                <li>
+                  <a href="../service_cyber/service-cyber.html"
+                    >Cyber Advisory</a
+                  >
+                  <div class="dropdown_allMenu">
+                    <span
+                      ><a href="../assessments/assessments.html"
+                        >Assessment & Compliance</a
+                      ></span
+                    >
+                    <span
+                      ><a href="../project-assurance/project-assurance.html"
+                        >Project Assurance</a
+                      ></span
+                    >
+                    <span
+                      ><a href="../cyber-crisis/cyber-crisis.html"
+                        >Cyber Crisis Simulation</a
+                      ></span
+                    >
+                    <span
+                      ><a href="../strategy/strategy.html"
+                        >Strategy & Governance</a
+                      ></span
+                    >
+                    <span
+                      ><a href="../cyber-resilience/cyber-resilience.html"
+                        >Cyber Resilience & Business Continuity</a
+                      ></span
+                    >
+                    <span
+                      ><a href="../third-party/third-party.html"
+                        >Third Party Risk Governance</a
+                      ></span
+                    >
+                    <span
+                      ><a href="../iso-soc/iso-soc.html"
+                        >ISO 27001 & SOC</a
+                      ></span
+                    >
+                    <span><a href="../hippa/hippa.html">HIPAA</a></span>
+                    <span><a href="../pci-dss/pci-dss.html">PCI DSS</a></span>
+                    <span><a href="#">NIST CSF</a></span>
+                  </div>
+                </li>
+                <li>
+                  <a href="../cloud-assurance/cloud-assurance.html"
+                    >Cloud Assurance</a
+                  >
+                  <div class="dropdown_allMenu">
+                    <span><a href="#">Application Modernisation</a></span>
+                    <span><a href="#">Application Security</a></span>
+                    <span><a href="#">Architecture</a></span>
+                    <span><a href="#">Cloud Security</a></span>
+                    <span><a href="#">Migration</a></span>
+                  </div>
+                </li>
+                <li>
+                  <a href="../managed services/managed-services.html"
+                    >Managed Services</a
+                  >
+                  <div class="dropdown_allMenu">
+                    <span><a href="../customer_support/customer-support.html">Advance Customer Support</a></span>
+                    <span><a href="#">Continuous Cloud Monitoring</a></span>
+                    <span><a href="#">Cyber Team as a Service</a></span>
+                    <span><a href="#">Cyber Threat Intelligence</a></span>
+                  </div>
+                </li>
+                <li>
+                  <a href="../security-testing/security-testing.html"
+                    >Security Testing</a
+                  >
+                  <div class="dropdown_allMenu">
+                    <span
+                      ><a href="#">Application Security -DAST & SAST</a></span
+                    >
+                    <span
+                      ><a href="#"
+                        >Application Vulnerability Risk Assessment (AVRA)</a
+                      ></span
+                    >
+                    <span><a href="#">Penetration Testing</a></span>
+                    <span><a href="#">Security Awareness Training</a></span>
+                    <span
+                      ><a href="#"
+                        >Vulnerability Management as a Service</a
+                      ></span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <a href="../talent/talent.html">Talent</a>
+                  <div class="dropdown_allMenu">
+                    <span><a href="#">Cyber Talent as a Service</a></span>
+                    <span><a href="#">Executive Search</a></span>
+                    <span><a href="#">Penetration Testing</a></span>
+                    <span><a href="#">Security Awareness Training</a></span>
+                    <span
+                      ><a href="#"
+                        >Vulnerability Management as a Service</a
+                      ></span
+                    >
+                  </div>
+                </li>
+                <li><a href="#">Incident Response</a></li>
+              </div>
+              <div class="responsive_allMenu">
+                <li>
+                  <a href="../service_cyber/service-cyber.html">
+                    <img src="../images/cyber.svg" alt="" />Cyber Advisory
+                  </a>
+                </li>
+                <li>
+                  <a href="../cloud-assurance/cloud-assurance.html">
+                    <img src="../images/cloud.svg" alt="" />Cloud Assurance
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="../images/warning.svg" alt="" />Incident Response
+                  </a>
+                </li>
+                <li>
+                  <a href="../managed services/managed-services.html">
+                    <img src="../images/setting.svg" alt="" />Managed Services
+                  </a>
+                </li>
+                <li>
+                  <a href="../talent/talent.html">
+                    <img src="../images/people.svg" alt="" />Talent
+                  </a>
+                </li>
+                <li>
+                  <a href="../security-testing/security-testing.html">
+                    <img src="../images/security.svg" alt="" />Security Testing
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../career/career.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact/contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-contact">
+        <a href="#">
+          <img src="../images/mail.svg" alt="" />
+          contact@greenitventure.com
+        </a>
+        <div>
+          <img src="../images/Ic_call.svg" alt="" />
+          +91 75583 74443
+        </div>
+      </div>
+    </nav>
+    <!-- section-1 -->
+    <div class="section1">
+      <div class="bgImg">
+        <div class="headingDiv">
+          <div class="heading">
+            <h1>Third Party Risk Governance</h1>
+          </div>
+        </div>
+        <nav
+          aria-label="breadcrumb"
+          style="
+            --bs-breadcrumb-divider: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2213%22 viewBox=%220 0 16 13%22 fill=%22none%22><path d=%22M6.5 12L9.5 8.5L6.5 5%22 stroke=%22%231547BA%22 stroke-width=%221.5%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22></path></svg>');
+          "
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="../home/home.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="../service/service.html">Services</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="../service_cyber/service-cyber.html">Cyber Advisory</a>
+            </li>
+            <li class="breadcrumb-item active long" aria-current="page">
+              Third Party Risk Governance
+            </li>
+            <li class="breadcrumb-item active short" aria-current="page">
+              Third Party Ri...
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- -----section-2------ -->
+    <div class="section2">
+      <div class="section2_sec1">
+        <div class="customer_support_intro">
+          <h3>
+            Green IT provide comprehensive Third-Party Risk Governance services
+            to help manage third party risk for your organisation.
+          </h3>
+          <p class="p">
+            Third party risk can leave your organisation open to severe
+            reputational damage, financial loss and diminishing customer
+            confidence.
+          </p>
+          <p>
+            Organisations are increasingly depending on third party vendors to
+            support their business and gain competitive advantage. Without
+            understanding the security risks associated with the third parties
+            your organisation is doing business with, you are leaving your
+            organisation vulnerable to security threats and data breaches
+            through them.
+          </p>
+        </div>
+        <img
+          src="../images/intro.png"
+          alt="intro_img"
+          class="intro_img img-fluid"
+        />
+      </div>
+      <div class="section2_sec2">
+        <h3>
+          The risk around suppliers is the threat presented to your
+          organisations most sensitive data including customer assets, employee
+          data, financial information, and intellectual property.
+        </h3>
+        <p>
+          The risk of third parties exposing your organisation’s most sensitive
+          data to a potential data breach, has been an area of focus for
+          Regulators with regulatory instruments such as fines being used to
+          compel organisations to undertake careful due diligence and risk
+          management.
+        </p>
+      </div>
+    </div>
+    <!-- -----section-5------ -->
+    <div class="section5">
+      <div class="service_offering">
+        <h1>Service Offering</h1>
+        <div class="service_pDiv">
+          <p>
+            Our team have expert industry experience in undertaking third party
+            due diligence and managing third party risk for large enterprises.
+            We offer the full suite of risk management services to help
+            transform, implement, and manage third party risk within your
+            organisation.
+          </p>
+          <p>
+            Our offering helps organisations understand your risk exposure and
+            put an overarching framework and processes in place to manage risk
+            effectively.
+          </p>
+          <p>Our range of services include:</p>
+        </div>
+      </div>
+      <div class="allService">
+        <div class="serviceDiv">
+          <img
+            src="../images/check-circle.svg"
+            alt="check_circle"
+            class="check_circle"
+          />
+          <h5>Designing Third Party Risk Management Framework</h5>
+        </div>
+        <div class="serviceDiv">
+          <img
+            src="../images/check-circle.svg"
+            alt="check_circle"
+            class="check_circle"
+          />
+          <h5>
+            Identifying suppliers across your business by engaging with
+            different business units and centrally through procurement.
+          </h5>
+        </div>
+        <div class="serviceDiv">
+          <img
+            src="../images/check-circle.svg"
+            alt="check_circle"
+            class="check_circle"
+          />
+          <h5>
+            Creating governance structures policies and procedures, to ensure
+            third party suppliers can only be on-boarded centrally through a
+            defined process where appropriate due diligence is undertaken.
+          </h5>
+        </div>
+        <div class="serviceDiv">
+          <img
+            src="../images/check-circle.svg"
+            alt="check_circle"
+            class="check_circle"
+          />
+          <h5>
+            Classification of suppliers based on their maturity and risk
+            profile.
+          </h5>
+        </div>
+        <div class="serviceDiv">
+          <img
+            src="../images/check-circle.svg"
+            alt="check_circle"
+            class="check_circle"
+          />
+          <h5>
+            Identification of the risks associated with suppliers and creating
+            risk treatment plans.
+          </h5>
+        </div>
+        <div class="serviceDiv">
+          <img
+            src="../images/check-circle.svg"
+            alt="check_circle"
+            class="check_circle"
+          />
+          <h5>Establishing vendor analytics and risk reporting workflows.</h5>
+        </div>
+      </div>
+    </div>
+    <!-- --blue--section -->
+    <div class="container-fluid">
+      <div class="contact_us">
+        <div class="row">
+          <div class="col-12 col-lg-4 contact_01">
+            <div class="contactss">
+              <h3>Contact Us</h3>
+              <p>Request your free Quote: We will Love to Help you</p>
+              <div class="contact_us_btn">Contact Us</div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 contact_flex">
+            <div class="email_img">
+              <img src="../images/email.svg" alt="" class="icon" />
+              <div>
+                <span>Email Us</span>
+                <p>contact@greenitventure.com</p>
+              </div>
+            </div>
+            <div class="call_img">
+              <img src="../images/call.svg" alt="" class="icon" />
+              <div>
+                <span>Contact Centre Number</span>
+                <p>+91 90434 72800</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 contact_img">
+            <img
+              src="../images/Contact-Us.png"
+              alt=""
+              class="img-fluid contact_responsive"
+            />
+            <img
+              src="../images/contact-responsive.png"
+              alt=""
+              class="responsive_img img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----footer ------ -->
+    <footer class="bg_color">
+      <div class="row IT_section">
+        <div class="col-lg-5 col-sm-12 logo">
+          <img src="../images/green-it-logo.png" alt="" class="green_it_logo" />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 links">
+          <p class="footer_link_heading">Quick Links</p>
+          <ul class="footer_gap">
+            <li>
+              <a href="../home/home.html">Home</a>
+            </li>
+            <li>
+              <a href="../about/about.html">About us</a>
+            </li>
+            <li>
+              <a href="../career/career.html">Career</a>
+            </li>
+            <li>
+              <a href="../contact/contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+          <p class="footer_link_heading">Service</p>
+          <ul class="footer_gap">
+            <li>
+              <a href="../service_cyber/service-cyber.html">Cyber Advisory</a>
+            </li>
+            <li>
+              <a href="../cloud-assurance/cloud-assurance.html"
+                >Cloud Assurance</a
+              >
+            </li>
+            <li>
+              <a href="#">Incident Response</a>
+            </li>
+            <li>
+              <a href="../managed services/managed-services.html"
+                >Managed Services</a
+              >
+            </li>
+            <li>
+              <a href="../security-testing/security-testing.html"
+                >Security Testing</a
+              >
+            </li>
+            <li>
+              <a href="../talent/talent.html">Talent</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 links">
+          <p class="footer_link_heading">Policies</p>
+          <ul class="footer_gap">
+            <li>
+              <a href="../cookies-policy/cookies-policy.html">Cookies Policy</a>
+            </li>
+            <li>
+              <a href="../privacy-policy/privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="../terms_and_conditions/terms-condition.html"
+                >Terms & Conditions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer_section">
+          <img src="../images/facebook.svg" alt="" />
+          <img src="../images/twitter.svg" alt="" />
+          <img src="../images/instagram.svg" alt="" />
+          <img src="../images/linkedin.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+    <div class="footer_wrapper">
+      <p>Copyright © 2023 Green IT Ventures</p>
+      <div class="footer">
+        <img src="../images/facebook.svg" alt="" />
+        <img src="../images/twitter.svg" alt="" />
+        <img src="../images/instagram.svg" alt="" />
+        <img src="../images/linkedin.svg" alt="" />
+      </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script defer>
+      const button = document.getElementById("navbar-toggler-button");
+      const icon = button.querySelector(".navbar-toggler-icon");
+      const close_icon = document.querySelector(".close_icon");
+      let navbarDiv = document.querySelector(".navbar-collapse");
+      const toggleNavbar = () => {
+        button.style.display = "none";
+        icon.classList.remove("navbar-toggler-icon");
+        icon.classList.add("close_icon");
+        close_icon.style.display = "block";
+        navbarDiv.style.boxShadow = "-90px 2px 2px 0 rgba(0,0,0,0.6)";
+        navbarDiv.style.right = "0";
+        navbarDiv.style.height = "100vh";
+      };
+      const closeNav = () => {
+        button.style.display = "block";
+        close_icon.style.display = "none";
+        icon.classList.remove("close_icon");
+        icon.classList.add("navbar-toggler-icon");
+        navbarDiv.style.boxShadow = "none";
+        navbarDiv.style.right = "-100%";
+      };
+
+      let dropdown = document.querySelector(".dropdown");
+      let dropdownMenu = dropdown.querySelector(".dropdown-menu");
+      let arrow_icon = dropdown.querySelector(".arrow-down");
+
+      let isDropdownVisible = false;
+      const openTab = () => {
+        if (!isDropdownVisible) {
+          dropdownMenu.style.display = "block";
+          isDropdownVisible = true;
+          arrow_icon.style.transition = "transform 0.3s ease";
+          arrow_icon.style.transform = "rotate(180deg)";
+        } else {
+          dropdownMenu.style.display = "none";
+          isDropdownVisible = false;
+          arrow_icon.style.transition = "transform 0.3s ease";
+          arrow_icon.style.transform = "rotate(0deg)";
+        }
+      };
+    </script>
+  </body>
+</html>
