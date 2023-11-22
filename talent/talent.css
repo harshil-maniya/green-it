@@ -1,5 +1,4 @@
 * {
-  font-family: "Inter", sans-serif;
   color: #112747;
   text-decoration: none !important;
   margin: 0;
@@ -53,7 +52,8 @@
 .navbar li .nav-link {
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
-  letter-spacing: 0.29px;}
+  letter-spacing: 0.29px;
+}
 .navbar li .nav-link.active {
   font-weight: 700;
   border-bottom: 4px solid #194ab9;
@@ -88,7 +88,8 @@
   color: #112747;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.29px;}
+  letter-spacing: 0.29px;
+}
 .nav-contact a:hover {
   font-weight: 600;
   color: #1547ba;

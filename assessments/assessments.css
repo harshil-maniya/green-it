@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+
   text-decoration: none !important;
 }
-.no-flick{
+.no-flick {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -71,7 +71,6 @@
   background-image: url(../images/menu.svg);
 }
 .navbar-toggler {
-  
   border: 0;
   padding: 0;
 }
